@@ -1,0 +1,6 @@
+@OnlineB2BStoreBackend_HostAddress = http://localhost:5024
+
+GET {{OnlineB2BStoreBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
