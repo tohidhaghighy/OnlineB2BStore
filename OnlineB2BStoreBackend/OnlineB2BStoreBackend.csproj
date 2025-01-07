@@ -13,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Endpoints\Category\Commands\" />
-    <Folder Include="Endpoints\Category\Dtos\" />
-    <Folder Include="Endpoints\Category\Queries\" />
+    <ProjectReference Include="..\OnlineB2BStoreBackend.Domain\OnlineB2BStoreBackend.Domain.csproj" />
+    <ProjectReference Include="..\OnlineB2BStoreBackend.Infrastructure\OnlineB2BStoreBackend.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

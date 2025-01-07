@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.1.35" />
+    <ProjectReference Include="..\OnlineB2BStoreBackend.Domain\OnlineB2BStoreBackend.Domain.csproj" />
   </ItemGroup>
 
 </Project>
