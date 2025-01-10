@@ -6,7 +6,7 @@ namespace OnlineB2BStoreBackend.Domain.Contracts
     {
         Task<List<MenuGroup>> GetMenuGroupList();
         Task<MenuGroup> GetMenuGroup(int id);
-        Task<MenuGroup> InsertMenuGroup(MenuGroup menuGroup);
+        Task<int> InsertMenuGroup(MenuGroup menuGroup);
         Task<MenuGroup> UpdateMenuGroup(MenuGroup menuGroup);
         Task<MenuGroup> RemoveMenuGroup(MenuGroup menuGroup);
     }

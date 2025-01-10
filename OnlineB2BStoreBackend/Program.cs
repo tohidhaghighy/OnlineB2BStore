@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddFastEndpoints()
+builder.Services.AddFastEndpoints().AddResponseCaching()
    .SwaggerDocument(); //define a swagger document
 builder.Services.AddSingleton<ApplicationDbContext>();
 builder.Services.AddScoped<IMenuGroupService,MenuGroupService>();
@@ -23,7 +23,7 @@ builder.Services.AddControllers()
 var app = builder.Build();
 
 // Configure FastEndpoints in the app
-app.UseFastEndpoints()
+app.UseResponseCaching().UseFastEndpoints()
    .UseSwaggerGen(); //add this;
 
 app.UseAuthorization();

@@ -17,4 +17,13 @@
     <ProjectReference Include="..\OnlineB2BStoreBackend.Infrastructure\OnlineB2BStoreBackend.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Endpoints\UserRole\Commands\" />
+    <Folder Include="Endpoints\UserRole\Queries\" />
+    <Folder Include="Endpoints\User\Commands\" />
+    <Folder Include="Endpoints\User\Dtos\" />
+    <Folder Include="Endpoints\User\Validators\" />
+    <Folder Include="Endpoints\User\Queries\" />
+  </ItemGroup>
+
 </Project>
