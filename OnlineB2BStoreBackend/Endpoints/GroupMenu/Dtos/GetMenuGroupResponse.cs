@@ -1,6 +1,6 @@
 ﻿namespace OnlineB2BStoreBackend.Endpoints.GroupMenu.Dtos
 {
-    public class GetMenuGroupListResponse
+    public class GetMenuGroupResponse
     {
         public int Id { get; set; }
         public string NameFa { get; set; }

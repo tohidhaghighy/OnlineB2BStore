@@ -12,6 +12,8 @@ builder.Services.AddFastEndpoints().AddResponseCaching()
    .SwaggerDocument(); //define a swagger document
 builder.Services.AddSingleton<ApplicationDbContext>();
 builder.Services.AddScoped<IMenuGroupService,MenuGroupService>();
+builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserRoleService,UserRoleService>();
 
 // Configure JSON serialization options to ignore null properties
 builder.Services.AddControllers()

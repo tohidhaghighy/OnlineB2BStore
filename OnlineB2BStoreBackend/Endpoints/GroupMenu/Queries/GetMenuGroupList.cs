@@ -5,7 +5,7 @@ using OnlineB2BStoreBackend.Endpoints.GroupMenu.Dtos;
 
 namespace OnlineB2BStoreBackend.Endpoints.Category.Queries
 {
-    public class GetMenuGroupList(IMenuGroupService menuGroupService) : EndpointWithoutRequest<List<GetMenuGroupListResponse>>
+    public class GetMenuGroupList(IMenuGroupService menuGroupService) : EndpointWithoutRequest<List<GetMenuGroupResponse>>
     {
         public override void Configure()
         {
@@ -17,11 +17,11 @@ namespace OnlineB2BStoreBackend.Endpoints.Category.Queries
         public override async Task HandleAsync(CancellationToken ct)
         {
             // Mock data for products
-            var menues = new List<GetMenuGroupListResponse>();
+            var menues = new List<GetMenuGroupResponse>();
             var menuList = await menuGroupService.GetMenuGroupList();
             foreach (var item in menuList)
             {
-                menues.Add(new GetMenuGroupListResponse()
+                menues.Add(new GetMenuGroupResponse()
                 {
                     Id = item.MenuGroupId,
                     NameEn = item.MenuGroupNameEn,
